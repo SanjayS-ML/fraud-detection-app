@@ -11,7 +11,7 @@ st.write('Enter a message to check whether it is Fraud or Not')
 
 #example button
 if st.button('Try Example'):
-    user_input = "Congratualtions! You've won a free prize. Click now!"
+    user_input = st.text_area("Congratualtions! You've won a free prize. Click now!")
 else:
     user_input = st.text_area('Enter Text')
 
