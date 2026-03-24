@@ -6,7 +6,7 @@ vectorizer = pickle.load(open('vectorizer.pkl','rb'))
 
 st.set_page_config(page_title='Fraud Detector', layout='centered')
 st.title('Fraud Detection App')
-st.markdown('### 🔍 Detect whether a message is Fraud or Not")
+st.markdown('### 🔍 Detect whether a message is Fraud or Not')
 st.write('Enter a message to check whether it is Fraud or Not')
 
 #example button
@@ -47,7 +47,7 @@ st.write(''' This application uses Machine Learning to detect fraudulent message
 - Threshold tuning applied for better fraud detection  
 
 Built using Streamlit for real-time predictions.
-""")
+''')
 
 #warning 
 st.warning('⚠️ This is a demo ML model and may not be 100% accurate.')
