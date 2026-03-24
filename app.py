@@ -9,11 +9,14 @@ st.title('Fraud Detection App')
 st.markdown('### 🔍 Detect whether a message is Fraud or Not')
 st.write('Enter a message to check whether it is Fraud or Not')
 
+if 'user_input' not in st.session_state:
+    st.session_state.user_input = ""
 #example button
 if st.button('Try Example'):
-    user_input = st.write("Congratualtions! You've won a free prize. Click now!")
-else:
-    user_input = st.text_area('Enter Text')
+    st.session_state.user_input = "WINNER!! As a valued network customer you have been selected to receivea å£900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only."
+
+#text input
+user_input = st.text_area('Enter Text', value=st.session_state.user_input)
 
 if st.button('Predict'):
     if user_input.strip() == "":
